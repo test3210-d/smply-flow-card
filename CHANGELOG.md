@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.2
+
+- Added the standard My Home Assistant button for one-click HACS custom-repository registration.
+- Added the correct HACS `plugin` category redirect parameters.
+- Documented automatic Lovelace resource registration after HACS installation.
+- Added official HACS repository validation to GitHub Actions.
+- Added a minimum supported Home Assistant version to `hacs.json`.
+
 ## 1.2.1
 
 - Added a global font-size selector from 8 px to 24 px.

@@ -26,30 +26,27 @@ Repository: https://github.com/test3210-d/smply-flow-card
 - Searchable entity selectors by entity ID and friendly name
 - Optional entities are hidden when not configured
 
-## Installation through HACS
+## HACS (recommended)
 
-1. Open **HACS**.
-2. Open the three-dot menu.
-3. Select **Custom repositories**.
-4. Add:
+[![Open your Home Assistant instance and open this repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=test3210-d&repository=smply-flow-card&category=plugin)
 
-   ```text
-   https://github.com/test3210-d/smply-flow-card
-   ```
+Open your Home Assistant instance and add this repository to the Home Assistant Community Store.
 
-5. Select the repository type **Dashboard** (called **Lovelace** in older HACS versions).
-6. Find **Simple Power Flow Card** and install it.
-7. Reload the browser.
+After HACS is installed, use the button above. Home Assistant opens HACS and pre-fills this custom dashboard repository:
 
-HACS registers the JavaScript resource automatically when Home Assistant uses storage mode for Lovelace dashboards.
+```text
+https://github.com/test3210-d/smply-flow-card
+```
 
-The resulting resource URL is normally:
+Install **Simple Power Flow Card** from HACS and reload the browser. HACS downloads `simple-power-flow-card.js` and automatically registers the dashboard resource when Lovelace uses storage mode.
+
+The resource URL is:
 
 ```text
 /hacsfiles/smply-flow-card/simple-power-flow-card.js
 ```
 
-When dashboards are managed entirely in YAML mode, add the resource manually:
+For dashboards managed entirely in YAML mode, add the resource manually:
 
 ```yaml
 lovelace:
@@ -57,6 +54,8 @@ lovelace:
     - url: /hacsfiles/smply-flow-card/simple-power-flow-card.js
       type: module
 ```
+
+> The My Home Assistant button adds this repository as a custom HACS repository. For the card to appear in HACS global search without adding the repository first, the repository must also be submitted to and accepted into the official HACS default repository list.
 
 ## Add the card
 
