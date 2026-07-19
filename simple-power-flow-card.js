@@ -1,4 +1,4 @@
-const SIMPLE_POWER_FLOW_CARD_VERSION = "1.2.2";
+const SIMPLE_POWER_FLOW_CARD_VERSION = "1.3.0";
 
 class SimplePowerFlowCard extends HTMLElement {
   static getConfigElement() {
